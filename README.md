@@ -10,13 +10,13 @@ This very basic express server is used as a base for CI/CD deployment exercises.
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd](https://github.com/nickmullaney/server-deployment-practice/actions) 
-- [back-end dev server url](https://server-development-practice-dev.onrender.com)
-- [back-end prod server url](https://server-deployment-practice-prod-jtud.onrender.com) 
+- [GitHub Actions ci/cd](https://github.com/nickmullaney/basic-express-server/actions) 
+- [back-end dev server url](https://basic-express-server-dev-s3kt.onrender.com)
+- [back-end prod server url](https://basic-express-server-prod-kctt.onrender.com) 
 
 ### Collaborators
 
-Thanks to Roger Gallaway for the demo code, permission granted to use
+Thanks to Roger Gallaway for the demo code, permission granted to use, Thanks to OpenAi for the assist on sections
 ### Setup
 
 #### `.env` requirements (where applicable)
@@ -34,7 +34,7 @@ clone repo, `npm i`, then run `nodemon` in the terminal
 #### Routes
 <!-- All routes should be documented -->
 - GET : `/success` - specific route to hit
-- GET : `/bad` - specific route to hit
+- GET : `/person` - specific route to hit
 - GET : `/` - proof of life
 
 #### Tests
