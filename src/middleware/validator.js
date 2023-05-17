@@ -4,7 +4,7 @@ module.exports = (req, res, next) => {
   let name = req.query.name;
   if(!name){
 
-    next('Name parameter is missing')
+    next('Name parameter is missing');
     // Longer way
     // throw new Error('Name parameter is missing');
     // error.status = 400;
@@ -13,4 +13,4 @@ module.exports = (req, res, next) => {
     // dont need return, can just call next
   }
   next();
-}
+};
