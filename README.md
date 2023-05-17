@@ -16,7 +16,7 @@ This very basic express server is used as a base for CI/CD deployment exercises.
 
 ### Collaborators
 
-Thanks to Roger Gallaway for the demo code, permission granted to use, Thanks to OpenAi for the assist on sections
+Thanks to Roger Gallaway for the demo code, permission granted to use, Thanks to OpenAi for the assist on sections and collaboration with Reece Renninger and Ryan Eastman
 ### Setup
 
 #### `.env` requirements (where applicable)
