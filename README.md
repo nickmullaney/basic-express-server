@@ -43,4 +43,4 @@ to run tests after running `npm i`, run the command `npm test`
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+![image](assets/lab2%20uml.png)
