@@ -12,9 +12,6 @@ const app = express();
 // middleware
 app.use(logger);
 app.use(express.json());
-//Can also have it broken up separately
-// This means the middleware works for all instances
-app.use(first, second, third);
 
 // app.post('/route', handlerCallback) 
 app.get('/', (req, res, next) => {
@@ -22,16 +19,14 @@ app.get('/', (req, res, next) => {
 });
 
 // person route
-app.get('/person/:name', validator, (req, res, next) =>{
+app.get('/person', validator, (req, res, next) =>{
 console.log(req.query);
-res.status(200).send('Something Happened');
+res.status(200).send(req.query);
 });
 
 app.get('/success', (req, res, next) => {
   res.status(200).send('Success!!');
 });
-
-app.get('/bad', notFound);
 
 app.use('*', notFound);
 app.use(errorHandler);
