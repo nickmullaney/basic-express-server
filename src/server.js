@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const logger = require('./middleware/logger')
+const logger = require('./middleware/logger');
 const validator = require('./middleware/validator');
 const notFound = require('./error-handlers/404');
 const errorHandler = require('./error-handlers/500');
@@ -19,9 +19,9 @@ app.get('/', (req, res, next) => {
 });
 
 // person route
-app.get('/person', validator, (req, res, next) =>{
-console.log(req.query);
-res.status(200).send(req.query);
+app.get('/person', validator, (req, res, next) => {
+  console.log(req.query);
+  res.status(200).send(req.query);
 });
 
 app.get('/success', (req, res, next) => {
@@ -33,4 +33,4 @@ app.use(errorHandler);
 
 const start = (port) => app.listen(port, () => console.log('listening on port:', port));
 
-module.exports = { start, app }
+module.exports = { start, app };
